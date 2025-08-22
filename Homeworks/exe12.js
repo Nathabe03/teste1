@@ -17,9 +17,9 @@ if (tempos <= 2 ) {
 if (desempenho >= 1 && desempenho <= 4){
     console.log("não obteve bônus por desempenho")
 } else if (desempenho >= 5 && desempenho <= 7 ){
-    bonus = salarioanual * 0.20
+    bonus += salarioanual * 0.20
 } else {
-    bonus = salarioanual * 0.50
+    bonus += salarioanual * 0.50
 }
 
-console.log (`O bônus total foi de ${bonus}`)
+console.log (`O bônus total foi de ${bonus}$`)
