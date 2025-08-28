@@ -1,24 +1,27 @@
-import readlineSync from 'readline-sync';
+const readlineSync = require('readline-sync');
 
-let salarioanual = readlineSync.question ("Qual o salário anual ? ")
-let tempos = readlineSync.question ("Qual o tempo de serviço ? ")
-let desempenho = readlineSync.question ("Digite o desempenho : ")
+let salarioanual = readlineSync.questionFloat ("Qual o salário anual ? ")
+let tempoS = readlineSync.questionFloat ("Qual o tempo de serviço ? ")
+let desempenho = readlineSync.questionFloat ("Digite o desempenho : ")
 
 let bonus = 0;
 
-if (tempos <= 2 ) {
+if (tempoS <= 2 ) {
    bonus = salarioanual * 0.05 
-}else if (tempos >=3 && tempos <= 5 ){
+
+}else if (tempoS >=3 && tempoS <= 5 ){
     bonus = salarioanual * 0.10
-}else {
+
+}else if(tempoS > 5){
     bonus = salarioanual * 0.15
 }
 
-if (desempenho >= 1 && desempenho <= 4){
+
+if (desempenho <= 4){
     console.log("não obteve bônus por desempenho")
 } else if (desempenho >= 5 && desempenho <= 7 ){
     bonus += salarioanual * 0.20
-} else {
+} else if (desempenho >= 8) {
     bonus += salarioanual * 0.50
 }
 
