@@ -14,3 +14,4 @@ function exibir(items, produto){
 }
 console.log(estoque)
 estoque.forEach(exibir)
+
