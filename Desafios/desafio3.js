@@ -4,4 +4,5 @@ function resultados(item, indice){
     if (numeros[indice] % 2 == 0){
         console.log (`Esse número ${numeros[indice]} é par`)
     }
-} numeros.forEach(resultados)
+} console.log(numeros) 
+numeros.forEach(resultados);

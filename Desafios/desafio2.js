@@ -3,7 +3,6 @@ let estoque = [
     {nome : "mouse", valor: 15},
     {nome : "mousepad", valor: 5}
 ]
-let valor = 0;
 
 
 function exibir(items, produto){
