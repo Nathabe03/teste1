@@ -6,9 +6,9 @@ let estoque = [
 let valor = 0;
 
 
-function exibir(item, indice){
-    if(estoque[indice].valor > 10){
-        console.log(`O item ${estoque[indice].nome}, custa ${estoque[indice].valor}`)
+function exibir(items, produto){
+    if(estoque[produto].valor > 10){
+        console.log(`O item ${estoque[produto].nome}, custa ${estoque[produto].valor}`)
     }
     
 }
