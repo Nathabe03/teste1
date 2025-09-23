@@ -1,0 +1,12 @@
+export class cortes {
+    Corte: string
+    Funcionarios: funcionario[]
+
+    constructor(corte: string, funcionarios: Funcionairos[] = []){
+        this.corte = Corte
+        this.Funcionario = []
+    }
+    
+    
+}
+
